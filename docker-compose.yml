@@ -2,8 +2,10 @@ version: '3.6'
 
 services:
   chatgpt:
-    build: .
+    # build: .
+    image: chatgpt-ui:latest
     ports:
       - 3000:3000
     environment:
       - 'OPENAI_API_KEY='
+      - 'OPENAI_API_HOST='
