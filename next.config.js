@@ -9,6 +9,7 @@ const nextConfig = {
     config.experiments = {
       asyncWebAssembly: true,
       layers: true,
+      runtime: 'edge',
     };
 
     return config;
